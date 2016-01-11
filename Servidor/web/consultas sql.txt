@@ -1,0 +1,39 @@
+LISTADO ENTIDADES
+
+$sql = "SELECT nombre FROM entidad";
+
+
+
+LISTADO ALIMENTOS ALFABETICAMENTE
+
+$sql = "SELECT * FROM alimento ORDER BY nombre";
+
+
+
+LISTADO ALIMENTOS PEDIDOS POR UNA ENTIDAD SEGÚN PRIORIDAD
+
+
+$sql = "
+SELECT alimento.nombre 
+FROM `alimento` 
+LEFT JOIN `prioridad` 
+ON alimento.ID_alimento=prioridad.ID_alimento 
+WHERE prioridad.ID_entidad = ".
+$ID_entidad
+." ORDER BY prioridad.prioridad";
+
+
+
+LISTADO DE ENTIDADES QUE PIDEN UN ALIMENTO SEGÚN PRIORIDAD
+
+SELECT entidad.nombre 
+FROM `entidad` 
+LEFT JOIN `prioridad` 
+ON entidad.ID_entidad=prioridad.ID_entidad 
+WHERE prioridad.ID_alimento = 1 
+ORDER BY prioridad.prioridad
+
+
+
+LISTADO GENERAL DE ALIMENTOS SEGÚN PRIORIDAD
+

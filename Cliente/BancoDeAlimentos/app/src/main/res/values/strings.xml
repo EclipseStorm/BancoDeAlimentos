@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Banco de alimentos</string>
+
+    <string name="mainmenu_title">Banco de alimentos</string>
+    <string name="mainmenu_button1">Entidades</string>
+    <string name="mainmenu_button2">Alimentos</string>
+
+
+
+
+    <string name="action_settings">Opciones</string>
+    <string name="title_activity_entidades">Entidades</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_datos_entidad">Datos_Entidad</string>
+    <string name="title_activity_alimentos">Alimentos</string>
+    <string name="title_activity_datos__alimentos">Datos_Alimentos</string>
+</resources>
